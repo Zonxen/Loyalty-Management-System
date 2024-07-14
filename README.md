@@ -41,7 +41,7 @@ Loyalty Management System API adalah API untuk mengelola sistem loyalitas dengan
 
 ```
 
-4. Setup database PostgreSQL Anda dan jalankan migrasi
+4. Setup database PostgreSQL dan jalankan migrasi
 
 ```bash
    npx sequelize-cli db:migrate
