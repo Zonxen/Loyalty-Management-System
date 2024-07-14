@@ -2,13 +2,15 @@ const express = require("express");
 const sequelize = require("./config/database");
 const authRoutes = require("./routes/auth");
 // const checkRememberMe = require("./middleware/checkRememberMe");
-const setupSwagger = require('./utils/swagger');
+const setupSwagger = require("./utils/swagger");
 const db = require("./models");
 const app = express();
+const membershipRoutes = require("./routes/membership");
 
 // Middleware Section
 app.use(express.json());
 // app.use(checkRememberMe);
+app.use("/api/membership", membershipRoutes);
 
 // Routes
 app.use("/api/auth", authRoutes);
