@@ -73,3 +73,32 @@ Loyalty Management System API adalah API untuk mengelola sistem loyalitas dengan
   }
 
 ```
+
+2. Membership
+
+```bash
+   URL: /api/membership/list
+   Method: GET
+   Response Body:
+   [
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@gmail.com",
+        "phoneNo": "123456789",
+        "joinDate": "2023-01-01T00:00:00.000Z",
+        "remainedPoint": 100,
+        "status": "Active"
+    },
+    {
+        "id": 5,
+        "name": "Jane Doe",
+        "email": "jane@gmail.com",
+        "phoneNo": "987654321",
+        "joinDate": "2023-02-01T00:00:00.000Z",
+        "remainedPoint": 150,
+        "status": "Active"
+    }
+]
+
+```
